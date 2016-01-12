@@ -1,2 +1,2 @@
-# wilburshi123.github.io
+# wilbur-shi.github.io
 Personal Website
