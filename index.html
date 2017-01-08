@@ -1,36 +1,69 @@
 <!DOCTYPE html>
 <html>
-<!-- Google Analytics -->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-89650022-1', 'auto');
-  ga('send', 'pageview');
-</script>
 	<head>
 		<title>Wilbur Shi</title>
 		<!-- put all my scripts, other dependencies, css, fonts, etc. -->
+				<!-- Google Analytics -->
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-89650022-1', 'auto');
+		  ga('send', 'pageview');
+		</script>
+
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+		<!-- Bootstrap -->
+    	<link href="css/bootstrap.min.css" rel="stylesheet">
+
 		<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-		<!-- fonts -->
-		<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
 	</head>
 	<body>
 		<div class="top_bar"> 
 			<ul class="topnav" id="myTopnav">
-			  <li><a href="#home">Home</a></li>
-			  <li><a href="#news">News</a></li>
+			  <li><a href="">Home</a></li>
+			  <li><a href="#about">About</a></li>
+			  <li><a href="#projects">Projects</a></li>
 			  <li><a href="#contact">Contact</a></li>
-			  <li><a href="about.html">About</a></li>
-			  <li class="icon">
-			    <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
 			  </li>
 			</ul>
 		</div>
-		<div class="main_title" id="name">Wilbur Shi
+		<div class="banner"> 
+			<div class="title_box" id="right_box"> 
+					<div class="main_title" id="name"><p>Hi, I'm Wilbur.</p></div>
+			</div>
+		</div>
+	
+		<!-- ABOUT -->
+		<div class="about text-center" id="about">
+		<h3> <u>ABOUT</u> </h3>
+			<div class="container"> 
+			<p>Welcome to my website! Currently, I'm a sophomore studying Electrical Engineering and Computer Science at UC Berkeley. Since I was young, I've been fascinated with technology - from setting up my family's new desktop to downloading cool apps on my mom's smartphone, the instruction manuals were never enough to read. I usually tend to look more for the why, and that's why you'd probably see me on Wikipedia or watching some YouTube explanation videos of a concept I learned in class! I have a passion for programming and building things with a tangible impact. And of course, I love to travel (the picture above was taken on top of Space Needle) and see what's out there in the world. As an Android developer and a ___, I am looking for internship opportunities this summer! Feel free to contact me below: <a href="#contact">Contact Me!</a></p>
+			</div>
 		</div>
 
+		<!-- PROJECTS -->
+		<div class="projects text-center" id="projects">
+		<h3> <u>PROJECTS</u> </h3>
+			<div class="container"> 
+			<ul>
+				<li>wat</li>
+			</ul>
+			</div>
+		</div>
+
+		<!-- CONTACT -->
+		<div class="contact text-center" id="contact">
+		<h3> <u>CONTACT</u> </h3>
+			<div class="logos">				
+					<a href="mailto:wilburshi@berkeley.edu"><img src="images/email.png" id="email"></a>
+					<!-- <a href="mailto:wilburshi@berkeley.edu"><span class="glyphicon glyphicon-envelope" id="email"></span></a> -->
+					<a href="https://github.com/wilbur-shi"><img src="images/github.png" id="github"></a>
+					<a href="https://www.linkedin.com/in/wilburshi"><img src="images/linkedin.png" id="linkedin"></a>
+			</div>
+		</div>
 	</body>
 </html>
