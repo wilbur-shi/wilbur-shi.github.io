@@ -73,11 +73,16 @@ div {
     line-height: 30px;
 }
 
+.about a {
+    color: black;
+    font-weight: 700;
+}
+
 #contact-me-btn {
     margin-top: 30px;
 }
 
-.about a {
+#contact-me-btn a {
     text-decoration: none;
     transition-duration: .2s;
     color: inherit;
@@ -88,7 +93,7 @@ div {
     padding: 10px 15px 10px 15px;
 }
 
-.about a:hover {
+#contact-me-btn a:hover {
     font-weight: 50px;
     letter-spacing: 1.2px;
     font-size: 15px;
@@ -179,6 +184,7 @@ u {
 
 .logos img:hover {
     opacity: .5;
+    transform: scale(1.2);
 }
 
 #email {
