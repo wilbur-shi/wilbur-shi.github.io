@@ -2,6 +2,9 @@
 <html>
 	<head>
 		<title>Wilbur Shi</title>
+
+		<!--mobile phone support-->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<!-- put all my scripts, other dependencies, css, fonts, etc. -->
 				<!-- Google Analytics -->
 		<script>
@@ -14,69 +17,150 @@
 		  ga('send', 'pageview');
 		</script>
 
+		<!--js files-->
+		<script src="js/jquery-3.1.0.min.js"></script>
+		<script src="js/index.js"></script>
+
 		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
 		<!-- Bootstrap -->
     	<link href="css/bootstrap.min.css" rel="stylesheet">
+		<script src="js/bootstrap.js"></script>
+
+    	<!-- fullPage.js -->
+    	<link href="css/jquery.fullPage.css" type="text/css" rel="stylesheet">
+    	<script src="js/jquery.fullPage.min.js"></script>
+
 
 		<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+
 		<link rel="icon" href="images/ws_logo.png">
 	</head>
 	<body>
-		<div class="top_bar"> 
-			<ul class="topnav" id="myTopnav">
-			  <li><a href="">Home</a></li>
-			  <li><a href="#about">About</a></li>
-			  <li><a href="#projects">Projects</a></li>
-			  <li><a href="#contact">Contact</a></li>
-			  </li>
-			</ul>
-		</div>
-		<div class="banner"> 
-			<div class="title_box" id="right_box"> 
-					<div class="main_title" id="name"><p>Hi, I'm Wilbur.</p></div>
+		<div id="fullpage">
+			<div class="section" id="section1">
+				<div class="main_title" id="name"><p>Hi, I'm Wilbur.</p></div>
 			</div>
-		</div>
-	
-		<!-- ABOUT -->
-		<div class="about text-center" id="about">
-		<h2> <u>ABOUT</u> </h2>
-			<div class="container"> 
-			<p>Welcome to my website! I'm Wilbur Shi, a sophomore studying Electrical Engineering and Computer Science at UC Berkeley. Since I was young, I've been fascinated with technology - from setting up my family's old desktop as child to trying out a new VR game, the instruction manuals were never enough to read. I usually tend to look more for the why, and that's why you'd probably see me on Wikipedia or watching some YouTube explanation videos of a concept I learned in class. I have a passion for programming and building things with a tangible impact. I just published two <a href="#projects">Android apps</a> to the Google Play Store and am currently working on a Chrome Extension as a <a href="#projects">personal side project.</a> And of course, I love to travel (the picture above was taken on top of Space Needle) and see what's out there in the world. As an Android developer and a student always eager to learn more, I am looking for internship opportunities this summer! Feel free to contact me below: <br>
-			<div id="contact-me-btn"><a href="#contact">LET'S TALK!</a></div></p>
+			
+				<!-- ABOUT -->
+			<div class="section" id="section2">
+				<div class="about text-center">
+				<h2> <u>ABOUT</u> </h2>
+					<div id="profile-pic"></div>
+					<div class="container"> 
+					<p>Welcome to my website! I'm Wilbur Shi, an upcoming Junior studying Electrical Engineering and Computer Science at UC Berkeley. Since I was young, I've been fascinated with technology - from setting up my family's old desktop as child to trying out a new VR game, the instruction manuals were never enough to read. I usually tend to look more for the why, and that's why you'd probably see me on Wikipedia or watching some YouTube explanation videos of a concept I learned in class. I have a passion for programming and building things with a tangible impact. I just published two <a href="#projects">Android apps</a> to the Google Play Store and am currently working on a Chrome Extension as a <a href="#projects">personal side project.</a> And of course, I love to travel (the picture above was taken on top of Space Needle) and see what's out there in the world. As an Android developer and a student always eager to learn more, I am looking for internship opportunities summer 2018! Feel free to contact me below: <br>
+					<div id="contact-me-btn"><a href="#contact">LET'S TALK!</a></div></p>
+					</div>
+				</div>
 			</div>
-		</div>
 
-		<!-- PROJECTS -->
-		<div class="projects text-center" id="projects">
-		<h2 style="margin-bottom: 30px;"> <u>PROJECTS</u> </h2>
-			<div class="container"> 
-				<div class="col-md-3 proj-card card1">
-					<img src="images/aux_banner.png" class="img-responsive" alt="">
-					<div class="proj-description">
-					<h4><b>Aux</b><br></h4><p>A collaborative playlist, dual-platform app built with Java for frontend, Firebase as our backend, and Spotify API for song querying and playing. <br><br></p><div class="view-more-btn"><a href="https://play.google.com/store/apps/details?id=org.mobiledevsberkeley.auxmusic">VIEW MORE</a></div></div>
-				</div>
-				<div class="col-md-3 proj-card card2">
-					<img src="images/kimojo_banner.png" class="img-responsive" alt="">
-					<div class="proj-description">
-					<h4><b>Kimojo</b><br></h4> A productivity-boosting Android app that allows users to select certain apps to block for a time period. Built with Java in Android Studio. <br><br></p><div class="view-more-btn"><a href="https://play.google.com/store/apps/details?id=com.mdb.wyn.stayfocused&hl=en">VIEW MORE</a></div></div>
-				</div>
-				<div class="col-md-3 proj-card card3">
-					<img src="images/youtube_alert_logo.png" class="img-responsive" alt="">
-					<div class="proj-description">
-					<h4><b>YouTube Alert (in progress)</b><br></h4> A Chrome Extension that alerts users on newly uploaded videos from channels they select. Built with AngularJS and YouTube API. <br><br></p><div class="view-more-btn"><a href="https://github.com/wilbur-shi/yt-chrome-extension">VIEW MORE</a></div></div>
+			<!-- SKILLS? or some other section -->
+			<div class="section" id="section3">
+				<div class="skills text-center">
+				<a target="_blank" href="documents/resume.pdf" class="btn btn-success">See More</a>
 				</div>
 			</div>
-		</div>
 
-		<!-- CONTACT -->
-		<div class="contact text-center" id="contact">
-		<h2 style="margin-bottom: 50px;"> <u>CONTACT</u> </h2>
-			<div class="logos">				
-					<a href="mailto:wilburshi@berkeley.edu"><img src="images/email.png" id="email"></a>
-					<!-- <a href="mailto:wilburshi@berkeley.edu"><span class="glyphicon glyphicon-envelope" id="email"></span></a> -->
-					<a href="https://github.com/wilbur-shi"><img src="images/github.png" id="github"></a>
-					<a href="https://www.linkedin.com/in/wilburshi"><img src="images/linkedin.png" id="linkedin"></a>
+			<!-- PROJECTS -->
+			<div class="section" id="section4">
+				<div class="projects text-center">
+				<h2 style="margin-bottom: 30px;"> <u>PROJECTS</u> </h2>
+					<div class="col-sm-3 proj-card" id="card1">
+						<img src="images/aux_banner.png" class="img-responsive">
+						<div class="proj-description">
+							<h4><b>Aux</b><br></h4><p>A collaborative playlist, dual-platform app built with Java for frontend, Firebase as our backend, and Spotify API for song querying and playing. <br><br></p>
+							<div class="view-more-btn"><a target="_blank" href="https://play.google.com/store/apps/details?id=org.mobiledevsberkeley.auxmusic">VIEW MORE</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 proj-card" id="card2">
+						<img src="images/kimojo_banner.png" class="img-responsive" alt="">
+						<div class="proj-description">
+							<h4><b>Kimojo</b><br></h4> A productivity-boosting Android app that allows users to select certain apps to block for a time period. Built with Java in Android Studio. <br><br></p>
+							<div class="view-more-btn"><a target="_blank" href="https://play.google.com/store/apps/details?id=com.mdb.wyn.stayfocused&hl=en">VIEW MORE</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 proj-card" id="card3">
+						<img src="images/youtube_alert_logo.png" class="img-responsive" alt="">
+							<div class="proj-description">
+							<h4><b>YouTube Alert (in progress)</b><br></h4> A Chrome Extension that alerts users on newly uploaded videos from channels they select. Built with AngularJS and YouTube API. <br><br></p>
+							<div class="view-more-btn"><a target="_blank" href="https://github.com/wilbur-shi/yt-chrome-extension">VIEW MORE</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 proj-card" id="card4">
+						
+					</div>
+				</div>
+<!-- 				<div class="projects text-center" id="projects">
+				<h2 style="margin-bottom: 30px;"> <u>PROJECTS</u> </h2>
+					<div class="container"> 
+						<div class="col-md-3 proj-card card1">
+							<img src="images/aux_banner.png" class="img-responsive" alt="">
+							<div class="proj-description">
+							<h4><b>Aux</b><br></h4><p>A collaborative playlist, dual-platform app built with Java for frontend, Firebase as our backend, and Spotify API for song querying and playing. <br><br></p><div class="view-more-btn"><a href="https://play.google.com/store/apps/details?id=org.mobiledevsberkeley.auxmusic">VIEW MORE</a></div></div>
+						</div>
+						<div class="col-md-3 proj-card card2">
+							<img src="images/kimojo_banner.png" class="img-responsive" alt="">
+							<div class="proj-description">
+							<h4><b>Kimojo</b><br></h4> A productivity-boosting Android app that allows users to select certain apps to block for a time period. Built with Java in Android Studio. <br><br></p><div class="view-more-btn"><a href="https://play.google.com/store/apps/details?id=com.mdb.wyn.stayfocused&hl=en">VIEW MORE</a></div></div>
+						</div>
+						<div class="col-md-3 proj-card card3">
+							<img src="images/youtube_alert_logo.png" class="img-responsive" alt="">
+							<div class="proj-description">
+							<h4><b>YouTube Alert (in progress)</b><br></h4> A Chrome Extension that alerts users on newly uploaded videos from channels they select. Built with AngularJS and YouTube API. <br><br></p><div class="view-more-btn"><a href="https://github.com/wilbur-shi/yt-chrome-extension">VIEW MORE</a></div></div>
+						</div>
+					</div>
+				</div> -->
+			</div>
+
+			<!-- CONTACT -->
+			<div class="section" id="section5">
+				<div class="contact text-center" id="contact">
+					<h2 style="margin-bottom: 50px;"> CONTACT </h2>
+					<div class="logos">				
+							<a href="mailto:wilburshi@berkeley.edu"><img src="images/email.png" id="email"></a>
+							<!-- <a href="mailto:wilburshi@berkeley.edu"><span class="glyphicon glyphicon-envelope" id="email"></span></a> -->
+							<a href="https://github.com/wilbur-shi"><img src="images/github.png" id="github"></a>
+							<a href="https://www.linkedin.com/in/wilburshi"><img src="images/linkedin.png" id="linkedin"></a>
+					</div>
+					<br>
+					<h2 style="text-decoration: none;">... or fill this out</h2>
+				</div>
+				<div class="form_container">
+					<form id="contact_me_form" method="post">
+						<table id="contact_me_table">
+							<tr>
+								<td>Name: <span style="color:#D70000">*</span><br>
+								<input type="text" name="name" required="true" /></td>
+							</tr>
+							<tr>
+								<td>E-mail Address: <span style="color:#D70000">*</span><br>
+								<input type="email" name="_replyto" required="true" /></td>
+							</tr>
+<!-- 							<tr>
+								<td>Subject:<br>
+								<input type="text" name="_subject" /></td>
+							</tr> -->
+							<input type="hidden" name="_subject" value="New submission!" />
+							<tr>
+								<td>Message: <span style="color:#D70000">*</span><br>
+								<textarea name="message" cols="42" rows="9" required="true"></textarea></td>
+								<!-- <input type="text" name="name"></td> -->
+							</tr>
+							<tr>
+							<td>
+								<input type="submit" name="submit" value="Send Message" class="btn btn-default" style="font-weight:bold"></td>
+							</tr>
+						</table>
+					</form>
+		<!-- 			<form id="contact_me_form" action="https://formspree.io/your@email.com" method="POST">
+					    <input type="text" name="name"><br>
+					    <input type="email" name="_replyto"><br>
+					    <input type="submit" value="Send"><br>
+					</form> -->
+				</div>
 			</div>
 		</div>
 		<div class="footer text-center"><p>Copyright 2017 Wilbur Shi</p></div>
