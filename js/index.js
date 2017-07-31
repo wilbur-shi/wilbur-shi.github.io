@@ -22,17 +22,43 @@ $(document).ready(function() {
 
 function submit_form(e) {
 	e.preventDefault();
+	var $contact_me_form = $("#contact_me_form");
+	var $submit = $("#contact_me_form input[name=submit]");
+	var submitText = $submit.val();
+
+	function clearValues(success) {
+	if (success) {
+		alert('Thank you for contacting me! I will get back to you shortly.');
+	} else {
+    	alert("Woops. There was an error while sending your message. Try again!");
+	}
+
+	$("#contact_me_form input[name=name]").val("");
+	$("#contact_me_form input[name=_replyto]").val("");
+	$("#contact_me_form input[name=subject]").val("");
+	$("#contact_me_form textarea[name=message]").val("");
+
+	setTimeout(function() {
+			$submit.attr('disabled', false).val(submitText);
+		}, 1000);
+	}
+
 	$.ajax({
 	    url: "https://formspree.io/wilburshi@sbcglobal.net", 
 	    method: "POST",
-	    data: $("#contact_me_form").serialize(),
+	    data: $contact_me_form.serialize(),
 	    dataType: "json",
+	    beforeSend: function() {
+			$submit.attr('disabled', true).val("Sending...");
+	    },
 	    success: function() {
-			alert('Thank you for contacting me! I will get back to you shortly.');
+			clearValues(true);
 	    }, 
 	    error: function(err) {
 	    	console.log(err);
-	    	alert("Woops. There was an error while sending your message. Try again!");
+	    	clearValues(false);
 	    }
 	});
 }
+
+
