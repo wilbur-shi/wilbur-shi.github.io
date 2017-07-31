@@ -12,7 +12,7 @@ $(document).ready(function() {
         scrollingSpeed: 1000,
 
         //Background sections
-        sectionsColor: ['#8EADAB', '#A09A99', '#8EADAB', '#EAD599', '#B797A3']
+        sectionsColor: ['#8EADAB', '#A09A99', '#8EADAB', '#EAD599', '#B797A3', '#B797A3']
         // sectionsColor: ['#3B61B4', '#F5AE4C', '#ABCEDF', '#E06D5B', '#3B61B4']
 
 	});
